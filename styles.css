@@ -1,0 +1,84 @@
+.mq-block-result {
+  position: relative;
+}
+
+.mq-block-error {
+  color: var(--text-error);
+  background-color: var(--background-modifier-error);
+  border-radius: var(--radius-s);
+  padding: 0.5em 0.75em;
+  font-family: var(--font-monospace);
+  font-size: var(--font-smaller);
+  white-space: pre-wrap;
+}
+
+.mq-block-loading {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.mq-block-source {
+  color: var(--text-faint);
+  font-size: var(--font-smaller);
+  margin-bottom: 0.25em;
+}
+
+.mq-cm-keyword {
+  color: var(--color-purple, #a626a4);
+  font-weight: 600;
+}
+
+.mq-cm-selector {
+  color: var(--color-cyan, #0184bc);
+}
+
+.mq-cm-function {
+  color: var(--color-blue, #4078f2);
+}
+
+.mq-cm-string {
+  color: var(--color-green, #50a14f);
+}
+
+.mq-cm-number {
+  color: var(--color-orange, #986801);
+}
+
+.mq-cm-comment {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.mq-cm-variable {
+  color: var(--color-red, #e45649);
+}
+
+.mq-cm-operator {
+  color: var(--text-muted);
+}
+
+.mq-hover-tooltip {
+  max-width: 32em;
+  padding: 0.5em 0.75em;
+  font-size: var(--font-smaller);
+}
+
+.mq-hover-tooltip pre {
+  margin: 0 0 0.25em 0;
+  white-space: pre-wrap;
+}
+
+.mq-hidden {
+  display: none;
+}
+
+.mq-query-input {
+  width: 100%;
+  font-family: var(--font-monospace);
+}
+
+.mq-vault-query-summary {
+  margin-top: 0.5em;
+  color: var(--text-muted);
+  font-size: var(--font-smaller);
+}

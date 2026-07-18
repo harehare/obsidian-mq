@@ -1,0 +1,49 @@
+{
+  "name": "obsidian-mq",
+  "description": "Run mq (a jq-like query language for Markdown) queries directly in Obsidian",
+  "version": "0.6.5",
+  "author": "harehare",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/harehare/obsidian-mq/issues"
+  },
+  "homepage": "https://github.com/harehare/obsidian-mq",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harehare/obsidian-mq.git"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "markdown",
+    "jq",
+    "filter",
+    "transform"
+  ],
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "type-check": "tsc -noEmit -skipLibCheck",
+    "lint": "oxlint src",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "mq-web": "0.6.5"
+  },
+  "devDependencies": {
+    "@codemirror/autocomplete": "^6.19.1",
+    "@codemirror/language": "^6.11.4",
+    "@codemirror/lint": "^6.9.1",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.38.9",
+    "@types/node": "^26.1.0",
+    "builtin-modules": "^5.0.0",
+    "esbuild": "^0.28.1",
+    "obsidian": "^1.8.7",
+    "oxlint": "^1.31.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.0"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
