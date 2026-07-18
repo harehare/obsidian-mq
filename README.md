@@ -1,11 +1,3 @@
-<div>
-  <a href="https://mqlang.org">Visit the site 🌐</a>
-  &mdash;
-  <a href="https://mqlang.org/book">Read the book 📖</a>
-  &mdash;
-  <a href="https://mqlang.org/playground">Playground 🎮</a>
-</div>
-
 <h1 align="center">mq for Obsidian</h1>
 
 Run [mq](https://github.com/harehare/mq) (a jq-like query language for Markdown) queries directly inside [Obsidian](https://obsidian.md), fully client-side via WebAssembly — no network access required.
