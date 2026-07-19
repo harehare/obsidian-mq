@@ -1,7 +1,7 @@
 {
   "id": "mq",
   "name": "mq",
-  "version": "0.6.5",
+  "version": "0.1.0",
   "minAppVersion": "1.5.0",
   "description": "Run mq (a jq-like query language for Markdown) queries directly in Obsidian: live query blocks, note/vault transforms, and editor support.",
   "author": "harehare",
