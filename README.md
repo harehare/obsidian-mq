@@ -2,6 +2,8 @@
 
 Run [mq](https://github.com/harehare/mq) (a jq-like query language for Markdown) queries directly inside [Obsidian](https://obsidian.md), fully client-side via WebAssembly — no network access required.
 
+![demo](assets/demo.jpg)
+
 ## Features
 
 ### Live query blocks
@@ -114,10 +116,6 @@ pnpm run build   # production build
 pnpm run test    # unit tests
 pnpm run lint    # oxlint
 ```
-
-## Limitations
-
-- `import`/`include` of local `.mq` module files and remote `https://`/GitHub modules both rely on the browser's [Origin Private File System](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system) (OPFS) being available in Obsidian's renderer, same as the [Playground](https://mqlang.org/playground) and `mq-web`. If OPFS isn't available in your environment, both fail silently (only standard-library modules resolve) rather than erroring — if a query using `import`/`include` produces no output, this is the most likely reason.
 
 ## License
 
