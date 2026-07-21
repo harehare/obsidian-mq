@@ -82,7 +82,7 @@ class MqBlockRenderChild extends MarkdownRenderChild {
       resultEl.createDiv({ cls: "mq-block-source", text: `mq · ${resolved.sourceLabel}` });
 
       const output = result.trim().length > 0 ? result : "_(empty result)_";
-      await MarkdownRenderer.render(app, output, resultEl, this.ctx.sourcePath, this.plugin);
+      await MarkdownRenderer.render(app, output, resultEl, this.ctx.sourcePath, this);
     } catch (error) {
       loading.remove();
       resultEl.empty();

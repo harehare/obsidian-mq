@@ -6,11 +6,11 @@ import { run } from "../mq/wasm";
 export function registerRunOnNoteCommand(plugin: MqPlugin): void {
   plugin.addCommand({
     id: "run-query-on-note",
-    name: "Run mq query on current note",
+    name: "Run query on current note",
     editorCallback: (editor, view) => {
       const hasSelection = editor.somethingSelected();
-      new QueryInputModal(plugin.app, hasSelection, async (result: QueryInputResult) => {
-        await executeQuery(plugin, editor, result);
+      new QueryInputModal(plugin.app, hasSelection, (result: QueryInputResult) => {
+        void executeQuery(plugin, editor, result);
       }).open();
       void view;
     },

@@ -20,11 +20,8 @@ export const mqHoverTooltip = hoverTooltip(async (view, pos): Promise<Tooltip | 
   return {
     pos,
     create: () => {
-      const dom = document.createElement("div");
-      dom.className = "mq-hover-tooltip";
-      const pre = document.createElement("pre");
-      pre.textContent = result.content;
-      dom.appendChild(pre);
+      const dom = createDiv({ cls: "mq-hover-tooltip" });
+      dom.createEl("pre", { text: result.content });
       return { dom };
     },
   };
