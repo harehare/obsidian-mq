@@ -83,6 +83,11 @@ mq queries a note as a tree of Markdown nodes; a query is typically a **selector
 
 Tasks are matched with the `.task`/`.todo`/`.done` selectors above, not a function — `select(is_task())` looks plausible but isn't real mq syntax and will error with `"is_task" is not defined`.
 
+## Data access
+
+- **Vault read** — "Run mq query across the vault" reads note contents via Obsidian's `getMarkdownFiles()` API to build its input; it never reads non-Markdown files. Nothing leaves the device — mq runs fully client-side via WebAssembly (see above).
+- **Clipboard write** — the "Copy to clipboard" result action for the current-note command writes the query result via `navigator.clipboard.writeText()`. The plugin never reads the clipboard.
+
 ## Settings
 
 - Markdown rendering style for query results (list marker, link title/URL style)
