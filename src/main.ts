@@ -23,7 +23,8 @@ export default class MqPlugin extends Plugin {
   }
 
   async loadSettings(): Promise<void> {
-    this.settings = { ...DEFAULT_SETTINGS, ...(await this.loadData()) };
+    const data = (await this.loadData()) as Partial<MqPluginSettings> | null;
+    this.settings = { ...DEFAULT_SETTINGS, ...data };
   }
 
   async saveSettings(): Promise<void> {

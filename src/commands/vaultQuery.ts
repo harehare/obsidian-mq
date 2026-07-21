@@ -8,7 +8,7 @@ import { run } from "../mq/wasm";
 export function registerVaultQueryCommand(plugin: MqPlugin): void {
   plugin.addCommand({
     id: "run-query-on-vault",
-    name: "Run mq query across the vault",
+    name: "Run query across the vault",
     callback: () => {
       new VaultQueryModal(plugin.app, (input) => void handleVaultQuery(plugin, input)).open();
     },

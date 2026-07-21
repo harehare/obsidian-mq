@@ -38,7 +38,6 @@
     "@codemirror/state": "^6.5.2",
     "@codemirror/view": "^6.38.9",
     "@types/node": "^26.1.0",
-    "builtin-modules": "^5.0.0",
     "esbuild": "^0.28.1",
     "obsidian": "^1.8.7",
     "oxlint": "^1.31.0",
