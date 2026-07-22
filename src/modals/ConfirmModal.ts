@@ -22,7 +22,8 @@ export class ConfirmModal extends Modal {
       .addButton((button) =>
         button
           .setButtonText(this.confirmText)
-          .setDestructive()
+          // setDestructive() requires Obsidian 1.13+; setWarning() keeps minAppVersion low.
+          .setWarning()
           .onClick(() => {
             this.close();
             this.onConfirm();
