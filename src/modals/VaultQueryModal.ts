@@ -28,7 +28,7 @@ export class VaultQueryModal extends Modal {
     contentEl.empty();
     contentEl.createEl("h3", { text: "Run mq query across the vault" });
 
-    new Setting(contentEl).setName("Query").setDesc("mq query applied to every matching note.").addTextArea((text) => {
+    new Setting(contentEl).setName("Query").setDesc("Mq query applied to every matching note.").addTextArea((text) => {
       text.inputEl.rows = 4;
       text.inputEl.addClass("mq-query-input");
       text.setPlaceholder(".[]").onChange((value) => {
@@ -45,11 +45,11 @@ export class VaultQueryModal extends Modal {
     new Setting(contentEl)
       .setName("Tag")
       .setDesc("Limit to notes carrying this tag. Leave empty to not filter by tag.")
-      .addText((text) => text.setPlaceholder("#project").onChange((value) => (this.tag = value)));
+      .addText((text) => text.setPlaceholder("#Project").onChange((value) => (this.tag = value)));
 
     new Setting(contentEl)
       .setName("Action")
-      .setDesc("\"Report\" is non-destructive: results are collected into a new note. \"Update files\" overwrites each matching note.")
+      .setDesc('"report" is non-destructive: results are collected into a new note. "update files" overwrites each matching note.')
       .addDropdown((dropdown) => {
         dropdown.addOption("report", "Report to a new note");
         dropdown.addOption("update", "Update files in place");

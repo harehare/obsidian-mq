@@ -56,7 +56,7 @@ async function executeQuery(
       break;
     case "copy":
       await navigator.clipboard.writeText(result);
-      new Notice("mq: result copied to clipboard.");
+      new Notice("Mq: result copied to clipboard.");
       break;
   }
 }

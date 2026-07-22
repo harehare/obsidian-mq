@@ -18,7 +18,7 @@ export function registerVaultQueryCommand(plugin: MqPlugin): void {
 async function handleVaultQuery(plugin: MqPlugin, input: VaultQueryInput): Promise<void> {
   const files = resolveScope(plugin, input.folder, input.tag);
   if (files.length === 0) {
-    new Notice("mq: no matching notes found for that folder/tag scope.");
+    new Notice("Mq: no matching notes found for that folder/tag scope.");
     return;
   }
 

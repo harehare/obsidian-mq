@@ -74,5 +74,9 @@ function stringifyLiteral(value: unknown): string {
       return withMarkdown.markdown().replace(/\|/g, "\\|");
     }
   }
+  if (typeof value === "object" && value.toString === Object.prototype.toString) {
+    return JSON.stringify(value).replace(/\|/g, "\\|");
+  }
+  // eslint-disable-next-line @typescript-eslint/no-base-to-string -- value comes from Dataview's untyped API; objects without a custom toString are JSON-stringified above, so this only runs for values that do override toString.
   return String(value).replace(/\|/g, "\\|");
 }

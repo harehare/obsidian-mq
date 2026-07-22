@@ -57,7 +57,7 @@ class MqBlockRenderChild extends MarkdownRenderChild {
 
     const ownFile = app.vault.getAbstractFileByPath(this.ctx.sourcePath);
     if (!(ownFile instanceof TFile)) {
-      loading.setText("mq: could not resolve the current note.");
+      loading.setText("Mq: could not resolve the current note.");
       return;
     }
 

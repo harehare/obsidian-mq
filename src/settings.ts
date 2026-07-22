@@ -185,7 +185,7 @@ export class MqSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Link title style")
-      .setDesc('Quoting used for link titles, e.g. [text](url "title").')
+      .setDesc('Quoting used for link titles, e.g. [text](URL "title").')
       .addDropdown((dropdown) =>
         dropdown
           .addOptions({ paren: "(paren)", double: '"double"', single: "'single'" })
