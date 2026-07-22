@@ -1,8 +1,8 @@
 {
   "id": "mq",
   "name": "mq",
-  "version": "0.1.4",
-  "minAppVersion": "1.5.0",
+  "version": "0.1.5",
+  "minAppVersion": "1.13.0",
   "description": "Run mq, a jq-like query language for Markdown: live query blocks, note/vault transforms, and editor support.",
   "author": "harehare",
   "authorUrl": "https://github.com/harehare",
