@@ -29,7 +29,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "mq-web": "0.6.5"
+    "mq-web": "0.7.0"
   },
   "devDependencies": {
     "@codemirror/autocomplete": "^6.19.1",

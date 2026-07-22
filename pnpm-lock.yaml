@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       mq-web:
-        specifier: 0.6.5
-        version: 0.6.5
+        specifier: 0.7.0
+        version: 0.7.0
     devDependencies:
       '@codemirror/autocomplete':
         specifier: ^6.19.1
@@ -772,8 +772,8 @@ packages:
   moment@2.29.4:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
 
-  mq-web@0.6.5:
-    resolution: {integrity: sha512-FUm378dTy8f7i/E9wAtYr7/wvrsShH4PPXd4UNGs974GHZoAFhsJmgef4/7N/TSYasmQkDZKm3YIfstgYBJf7Q==}
+  mq-web@0.7.0:
+    resolution: {integrity: sha512-V2h+5toQB+Fz4fB0TQOy13nXFpfef9/cRpQt+URSQFlsaen8PtG/0MJf+3M2b3dTqmpAASA5092RO0PenkT+JA==}
 
   nanoid@3.3.16:
     resolution: {integrity: sha512-bzlKTyNJ7+LdGIIwy8ijFpIqEQIvafahV7eYykJ8Cvh42EdJeODoJ6gUJXpQJvej1BddH8OqTXZNE/KfbWAu8Q==}
@@ -1454,7 +1454,7 @@ snapshots:
 
   moment@2.29.4: {}
 
-  mq-web@0.6.5: {}
+  mq-web@0.7.0: {}
 
   nanoid@3.3.16: {}
 
