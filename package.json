@@ -1,7 +1,7 @@
 {
   "name": "obsidian-mq",
   "description": "Run mq (a jq-like query language for Markdown) queries directly in Obsidian",
-  "version": "0.6.5",
+  "version": "0.1.7",
   "author": "harehare",
   "license": "MIT",
   "private": true,
