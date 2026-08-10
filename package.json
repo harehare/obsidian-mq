@@ -1,7 +1,7 @@
 {
   "name": "obsidian-mq",
   "description": "Run mq (a jq-like query language for Markdown) queries directly in Obsidian",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "harehare",
   "license": "MIT",
   "private": true,
@@ -30,7 +30,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "mq-web": "0.8.1"
+    "mq-web": "0.8.2"
   },
   "devDependencies": {
     "@codemirror/autocomplete": "^6.19.1",
