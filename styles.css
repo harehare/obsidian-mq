@@ -12,6 +12,16 @@
   white-space: pre-wrap;
 }
 
+.mq-block-notice {
+  color: var(--text-muted);
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-s);
+  padding: 0.5em 0.75em;
+  font-family: var(--font-monospace);
+  font-size: var(--font-smaller);
+  white-space: pre-wrap;
+}
+
 .mq-block-loading {
   color: var(--text-faint);
   font-style: italic;
