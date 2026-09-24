@@ -7,6 +7,15 @@ import { run } from "./mq/wasm";
 
 export function registerMqCodeBlockProcessor(plugin: MqPlugin): void {
   plugin.registerMarkdownCodeBlockProcessor("mq", (source, el, ctx) => {
+    if (el.closest(".mq-block-result")) {
+      el.createDiv({
+        cls: "mq-block-error",
+        text: "mq: nested mq blocks inside a query result are not executed, to avoid infinite loops.",
+      });
+      el.createEl("pre").createEl("code", { text: source });
+      return;
+    }
+
     const child = new MqBlockRenderChild(plugin, source, el, ctx);
     ctx.addChild(child);
   });
